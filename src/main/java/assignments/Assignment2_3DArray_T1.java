@@ -1,6 +1,6 @@
 package assignments;
 
-public class Assignment2_3DArray {
+public class Assignment2_3DArray_T1 {
 
 	public static void main(String[] args) {
 		
