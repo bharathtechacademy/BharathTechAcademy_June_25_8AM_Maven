@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-24T10:22:57 IST" name="Suite" finished-at="2025-08-24T10:22:58 IST" duration-ms="838">
+    <groups>
+      <group name="Sanity">
+        <method signature="ApplicationTest.TestCase1()[pri:2, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" name="TestCase1" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase3(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" name="TestCase3" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase4(java.lang.String,java.lang.String,java.lang.String)[pri:-1, instance:testng.framework.concepts.ApplicationTest@77888435]" name="TestCase4" class="testng.framework.concepts.ApplicationTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="ApplicationTest.TestCase1()[pri:2, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" name="TestCase1" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase2()[pri:1, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" name="TestCase2" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase4(java.lang.String,java.lang.String,java.lang.String)[pri:-1, instance:testng.framework.concepts.ApplicationTest@77888435]" name="TestCase4" class="testng.framework.concepts.ApplicationTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="ApplicationTest.TestCase2()[pri:1, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" name="TestCase2" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase3(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" name="TestCase3" class="testng.framework.concepts.ApplicationTest"/>
+        <method signature="ApplicationTest.TestCase4(java.lang.String,java.lang.String,java.lang.String)[pri:-1, instance:testng.framework.concepts.ApplicationTest@77888435]" name="TestCase4" class="testng.framework.concepts.ApplicationTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-08-24T10:22:57 IST" name="ChromeTest1" finished-at="2025-08-24T10:22:57 IST" duration-ms="57">
+      <class name="testng.framework.concepts.ApplicationTest">
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="TestCase1()[pri:2, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="TestCase1" finished-at="2025-08-24T10:22:57 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="closeBrowser" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="logoutFromApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase2()[pri:1, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="TestCase2" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.ApplicationTest.TestCase1" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="closeBrowser" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="logoutFromApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method signature="TestCase2()[pri:1, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="TestCase2" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="testng.framework.concepts.ApplicationTest.TestCase1" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@7e07db1f]" started-at="2025-08-24T10:22:57 IST" name="closeBrowser" finished-at="2025-08-24T10:22:57 IST" depends-on-methods="logoutFromApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testng.framework.concepts.ApplicationTest -->
+    </test> <!-- ChromeTest1 -->
+    <test started-at="2025-08-24T10:22:57 IST" name="ChromeTest3" finished-at="2025-08-24T10:22:58 IST" duration-ms="838">
+      <class name="testng.framework.concepts.ApplicationTest">
+        <test-method is-config="true" signature="startReporting()[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:57 IST" name="startReporting" finished-at="2025-08-24T10:22:57 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReporting -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase4(java.lang.String,java.lang.String,java.lang.String)[pri:-1, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="TestCase4" data-provider="testdata" finished-at="2025-08-24T10:22:58 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GHFDGJHF1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="closeBrowser" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="logoutFromApplication" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="stopReporting()[pri:0, instance:testng.framework.concepts.ApplicationTest@77888435]" started-at="2025-08-24T10:22:58 IST" name="stopReporting" finished-at="2025-08-24T10:22:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReporting -->
+      </class> <!-- testng.framework.concepts.ApplicationTest -->
+    </test> <!-- ChromeTest3 -->
+    <test started-at="2025-08-24T10:22:57 IST" name="ChromeTest2" finished-at="2025-08-24T10:22:58 IST" duration-ms="838">
+      <class name="testng.framework.concepts.ApplicationTest">
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="TestCase3" data-provider="testdata" finished-at="2025-08-24T10:22:58 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="closeBrowser" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="logoutFromApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="verifyApplicationHomePage()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="verifyApplicationHomePage" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGAppCommons.loginIntoApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationHomePage -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="TestCase3" data-provider="testdata" finished-at="2025-08-24T10:22:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="launchBrowserAndApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WWW.ICICI.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="loginIntoApplication(java.lang.String,java.lang.String)[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="loginIntoApplication" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="testng.framework.concepts.TestNGWebCommons.launchBrowserAndApplication" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BHARATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BHARATH123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="closeBrowser" finished-at="2025-08-24T10:22:58 IST" depends-on-methods="logoutFromApplication" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:testng.framework.concepts.ApplicationTest@3270d194]" started-at="2025-08-24T10:22:58 IST" name="logoutFromApplication" finished-at="2025-08-24T10:22:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- testng.framework.concepts.ApplicationTest -->
+    </test> <!-- ChromeTest2 -->
+  </suite> <!-- Suite -->
+</testng-results>

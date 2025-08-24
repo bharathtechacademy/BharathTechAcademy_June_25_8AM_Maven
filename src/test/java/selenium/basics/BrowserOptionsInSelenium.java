@@ -19,6 +19,8 @@ public class BrowserOptionsInSelenium {
 		options.addArguments("--allow-notifications");// Allow notifications
 		options.addArguments("--ignore-certificate-error");// Ignore certificate errors
 		options.addArguments("--lang=en-US"); // Set the browser language to English (US)
+		options.addArguments("--headless"); // Run the browser in headless mode (without GUI)
+
 		
 //		1: Launch the Chrome browser
 		WebDriver driver = new ChromeDriver(options);
