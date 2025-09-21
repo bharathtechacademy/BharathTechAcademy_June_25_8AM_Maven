@@ -2,6 +2,8 @@ package assignments;
 
 // Print a right-aligned triangle of stars
 public class Assignment17_Triangle {
+	
+	
 
 	public static void main(String[] args) {
 		
@@ -23,5 +25,8 @@ public class Assignment17_Triangle {
 			// Move to the next line after each row
 			System.out.println();
 		}
+		
+		// Program related to diamond pattern
+		System.out.println("Diamond Pattern");
 	}
 }

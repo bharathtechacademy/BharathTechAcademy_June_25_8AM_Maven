@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import testng.framework.listeners.RetryTest;
 import utilities.ExcelUtil;
 
 public class ApplicationTest extends TestNGAppCommons {
@@ -22,9 +23,9 @@ public class ApplicationTest extends TestNGAppCommons {
 //		return userdata;
 //	}
 	
-	@Test(priority=2,timeOut=2000, groups= {"Regression","Sanity"})
+	@Test(priority=2,timeOut=2000, groups= {"Regression","Sanity"},retryAnalyzer = RetryTest.class)
 	public void TestCase1() throws InterruptedException {
-//		Assert.fail("Test case 1 failed");
+		Assert.fail("Test case 1 failed");
 		System.out.println("Executing test case 1 steps...");
 //		Thread.sleep(1000);
 		System.out.println("Execution Completed for test case 1 ...");

@@ -5,6 +5,9 @@
   <parameter name="PASSWORD" value="BHARATH123"/>
   <parameter name="USERNAME" value="BHARATH"/>
   <parameter name="URL" value="WWW.ICICI.COM"/>
+  <listeners>
+    <listener class-name="testng.framework.listeners.TestListeners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="testng.framework.concepts.ApplicationTest">
